@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #000;
+    min-height: 100vh;
+}
+
+/* Background */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("https://genotipia.com/wp-content/uploads/2020/04/Netflix-Background-prueba-1.jpg")
+        center / cover no-repeat;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 70px;
+    z-index: 10;
+}
+
+nav img {
+    width: 170px;
+    filter: brightness(1.1);
+}
+
+/* Container */
+.container {
+    width: 450px;
+    padding: 60px 68px 40px;
+    background: rgba(0, 0, 0, 0.664);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Heading */
+.container h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 28px;
+}
+
+/* Input Fields */
+.control {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.control input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #8c8c8c;
+    border-radius: 4px;
+    color: #fff;
+    padding: 16px 20px 0;
+    font-size: 1rem;
+}
+
+.control label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #8c8c8c;
+    font-size: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.15s ease;
+}
+
+.control input:focus,
+.control input:valid {
+    background: #333;
+}
+
+.control input:focus ~ label,
+.control input:valid ~ label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 14px 0;
+    background: #e50914;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #c40812;
+}
+
+.sign-in-btn {
+    background: #3d3d3d;
+    margin-top: 16px;
+}
+
+/* Text */
+p {
+    text-align: center;
+    margin: 15px 0;
+    color: #b3b3b3;
+}
+
+/* Links */
+a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Remember me */
+.help {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+.remember-me input {
+    margin-right: 5px;
+    accent-color: #b3b3b3;
+}
+
+/* Footer text */
+small {
+    display: block;
+    margin-top: 22px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #b3b3b3;
+}
+
+small a {
+    color: #0071eb;
+}
+
